@@ -4,7 +4,7 @@ class TextDestroy extends Component {
     render() { 
         return ( 
             <div>
-                
+                {this.props.text && <h1>{this.props.text}</h1>}
             </div>
          );
     }
