@@ -476,6 +476,7 @@
   align-items: center;
   transform-style: preserve-3d;
   transform: perspective(50rem) rotateX(45deg);
+
 }
 .ani-wave-ring-loader span{
   position: absolute;

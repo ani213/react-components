@@ -12,7 +12,7 @@ class App extends Component {
     return ( 
       <div>
           <div className="text-destroy-container">
-            <TextRainBow text="MY REACT COMPONENTS" fontSize="5rem" fontWeight="900"/>
+            <TextRainBow text="MY REACT COMPONENTS"/>
           </div>
           <div className="loader-container">
            <h1 className="pre-loader">PRE-LOADERS</h1>
@@ -26,6 +26,12 @@ class App extends Component {
               <WaveRingLoader />
             </div>
             </div>
+          </div>
+          <div className="footer-container">
+             <TextRainBow text="Other components will be available very soon..." fontSize="3rem" fontWeight="900"/>
+          </div>
+          <div className="coded">
+            <h1 >Coded with love by Aniket Kumar Verma.</h1>
           </div>
       </div>
      );

@@ -9,7 +9,7 @@ class TextRainBow extends Component {
         return ( 
             <div className="over-flow-hidden">
                 {this.props.text && <div className="ani-text-rainBow" 
-                // style={style}
+                style={style}
                 >{this.props.text}</div>}          
             </div>
          );
