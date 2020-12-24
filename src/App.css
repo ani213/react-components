@@ -19,6 +19,13 @@
   html{
     font-size: 62.5%;
 }
+.text-destroy-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #0D3D56;
+}
 .loading-container{
   width: 100%;
   background: var(--background-1);

@@ -98,12 +98,29 @@
 
 /*   ring Loader End */
 
-/* Text Destroy  */
-.ani-text-destroy{
-  font-size: 5rem;
-  font-weight: 800;
+/* Text RainBow  */
+
+.ani-text-rainBow{
+  /* background: linear-gradient(to right, green, rgb(218, 133, 23)); */
+  /* font-size: 5rem; */
+  /* font-weight: 900; */
+  background: linear-gradient(to right, #ff0000, #ffa500, #ffff00 , #008000, #0000ff, #4b0082, #ee82ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 3s ease-in-out infinite;
+  background-size: 400% 100%;
 }
 
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
 
 /* Text Destroy End */
 
