@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/component.css'
+import React, { Component } from 'react';
+import RingLoader from './components/RingLoader';
+import TextDestroy from './components/TextDestroy';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  state = {  }
+  render() { 
+    return ( 
+      <div>
+          <div>
+            
+          </div>
+          <div className="loading-container">
+             <h1>PRE-LOADERS</h1>
+            <div>
+               <RingLoader />
+            </div>  
+          </div>
+      </div>
+     );
+  }
 }
-
+ 
 export default App;

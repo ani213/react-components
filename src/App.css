@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+:root {
+  --primary-light: #8abdff;
+  /* --primary-own: #5a84a2; */
+  /* --primary-own:#373D3F; */
+  --primary-own:#0D3D56;
+  --primary-dark: #5b0eeb;
+  
+  --white: #FFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+  --greyDark-1: #BABECC;
+  --background-1:#EBECF0;
+  --loader:#ffff1a;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (min-width:851px) {
+  html{
+    font-size: 62.5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loading-container{
+  width: 100%;
+  background: var(--background-1);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-flow: column;
+  padding: 2rem;
+}
+ 
 }
 
-.App-link {
-  color: #61dafb;
+
+/*********************************************** Tablet View***************************/
+@media screen and (min-width:451px) and (max-width:850px) {
+  html{
+      font-size: 55%;
+  }
+ 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+/* ****************************************************************** */
+
+@media screen and (max-width:450px) {
+  html{
+      font-size: 45%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+ 
 }
