@@ -11,7 +11,7 @@ class App extends Component {
     return ( 
       <div>
           <div>
-            
+            <TextDestroy text="My React Components"/>
           </div>
           <div className="loading-container">
              <h1>PRE-LOADERS</h1>
