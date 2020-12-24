@@ -101,9 +101,8 @@
 /* Text RainBow  */
 
 .ani-text-rainBow{
-  /* background: linear-gradient(to right, green, rgb(218, 133, 23)); */
-  /* font-size: 5rem; */
-  /* font-weight: 900; */
+  font-size: 5rem;
+  font-weight: 900;
   background: linear-gradient(to right, #ff0000, #ffa500, #ffff00 , #008000, #0000ff, #4b0082, #ee82ee);
   -webkit-background-clip: text;
   background-clip: text;
@@ -122,8 +121,65 @@
   }
 }
 
-/* Text Destroy End */
+/* Text RainBow End */
 
+/* Wave Ring Loader */
+.ani-wave-ring-loader{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: perspective(50rem) rotateX(45deg);
+}
+.ani-wave-ring-loader span{
+  position: absolute;
+  display: block;
+  border: 15px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 1rem 0 #e0e0e0, inset 0 1rem 0 #e0e0e0;
+  animation: animation-wave-ring-loader 4.5s ease-in-out infinite;
+}
+.ani-wave-ring-loader span:nth-child(1){
+  animation-delay: 0s;
+}
+.ani-wave-ring-loader span:nth-child(2){
+  animation-delay: 1.5s;
+}
+.ani-wave-ring-loader span:nth-child(3){
+  animation-delay: 3s;
+}
+@keyframes animation-wave-ring-loader {
+  0%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+  25%{
+    transform: translateZ(100px);
+    width: 100%;
+    height: 100%;
+  }
+  50%{
+    transform: translateZ(100px);
+    width: 35%;
+    height: 35%;
+  }
+  75%{
+    transform: translateZ(-100px);
+    width: 35%;
+    height: 35%;
+  }
+  100%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Wave Ring Loader */
 
   
   }
@@ -134,8 +190,165 @@
     html{
         font-size: 55%;
     }
-   
+    .ring{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+      background:var(--greyLight-1);
+      border-radius: 50%;
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5);
+    
+      color: #ac550e;
+      letter-spacing: 0.4rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 0.1rem #ac550e;
+      box-shadow: .3rem .3rem .6rem var(--greyDark-1), 
+                 -.2rem -.2rem .5rem var(--white) !important;
+      position: relative;           
+    }
+    .ring:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 96%;
+      height: 96%;
+      border: 0.3rem solid transparent;
+      border-top: 0.3rem solid var(--loader);
+      border-right: 0.3rem solid var(--loader);
+      border-radius: 50%;
+      animation: animateCircle 2s linear infinite;
+    }
+    .ring>span{
+      display: block;
+      position: absolute;
+      right: 0;
+      background: var(--loader);
+      background: transparent;
+      width: 50%;
+      height: 0.5rem;
+      transform-origin: left;
+      animation: animate 2s linear infinite;
+    }
+    .ring>span:before{
+      content: "";
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--loader);
+      right: -0.7rem;
+      top: -0.6rem;
+      box-shadow: 0 0 2rem var(--loader);
+    }
+    
+    @keyframes animateCircle {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg)
+      }
+    }
+    @keyframes animate {
+      0%{
+        transform: rotate(50deg);
+      }
+      100%{
+        transform: rotate(405deg)
+      }
+    }
   
+  /*   ring Loader End */
+  
+  /* Text RainBow  */
+  
+  .ani-text-rainBow{
+    /* background: linear-gradient(to right, green, rgb(218, 133, 23)); */
+    font-size: 4rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00 , #008000, #0000ff, #4b0082, #ee82ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
+  /* Text Rainbow end */
+
+/* Wave Ring Loader */
+.ani-wave-ring-loader{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: perspective(50rem) rotateX(45deg);
+}
+.ani-wave-ring-loader span{
+  position: absolute;
+  display: block;
+  border: 15px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 1rem 0 #e0e0e0, inset 0 1rem 0 #e0e0e0;
+  animation: animation-wave-ring-loader 4.5s ease-in-out infinite;
+}
+.ani-wave-ring-loader span:nth-child(1){
+  animation-delay: 0s;
+}
+.ani-wave-ring-loader span:nth-child(2){
+  animation-delay: 1.5s;
+}
+.ani-wave-ring-loader span:nth-child(3){
+  animation-delay: 3s;
+}
+@keyframes animation-wave-ring-loader {
+  0%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+  25%{
+    transform: translateZ(100px);
+    width: 100%;
+    height: 100%;
+  }
+  50%{
+    transform: translateZ(100px);
+    width: 35%;
+    height: 35%;
+  }
+  75%{
+    transform: translateZ(-100px);
+    width: 35%;
+    height: 35%;
+  }
+  100%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Wave Ring Loader */
+
   }
   
   
@@ -148,5 +361,166 @@
     html{
         font-size: 45%;
     }
-   
+    .ring{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+      background:var(--greyLight-1);
+      border-radius: 50%;
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5);
+    
+      color: #ac550e;
+      letter-spacing: 0.4rem;
+      text-transform: uppercase;
+      text-shadow: 0 0 0.1rem #ac550e;
+      box-shadow: .3rem .3rem .6rem var(--greyDark-1), 
+                 -.2rem -.2rem .5rem var(--white) !important;
+      position: relative;           
+    }
+    .ring:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 96%;
+      height: 96%;
+      border: 0.3rem solid transparent;
+      border-top: 0.3rem solid var(--loader);
+      border-right: 0.3rem solid var(--loader);
+      border-radius: 50%;
+      animation: animateCircle 2s linear infinite;
+    }
+    .ring>span{
+      display: block;
+      position: absolute;
+      right: 0;
+      background: var(--loader);
+      background: transparent;
+      width: 50%;
+      height: 0.5rem;
+      transform-origin: left;
+      animation: animate 2s linear infinite;
+    }
+    .ring>span:before{
+      content: "";
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--loader);
+      right: -0.7rem;
+      top: -0.6rem;
+      box-shadow: 0 0 2rem var(--loader);
+    }
+    
+    @keyframes animateCircle {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg)
+      }
+    }
+    @keyframes animate {
+      0%{
+        transform: rotate(50deg);
+      }
+      100%{
+        transform: rotate(405deg)
+      }
+    }
+  
+  /*   ring Loader End */
+  
+  /* Text RainBow  */
+  
+  .over-flow-hidden{
+    overflow: hidden;
+  }
+  .ani-text-rainBow{
+    /* background: linear-gradient(to right, green, rgb(218, 133, 23)); */
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #ff0000, #ffa500, #ffff00 , #008000, #0000ff, #4b0082, #ee82ee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 3s ease-in-out infinite;
+    background-size: 400% 100%;
+  }
+  
+  @keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+  
+    50% {
+        background-position: 100% 0;
+    }
+  }
+  /* Text Rain bow end */
+
+
+  /* Wave Ring Loader */
+.ani-wave-ring-loader{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transform: perspective(50rem) rotateX(45deg);
+}
+.ani-wave-ring-loader span{
+  position: absolute;
+  display: block;
+  border: 15px solid #fff;
+  box-sizing: border-box;
+  border-radius: 50%;
+  box-shadow: 0 1rem 0 #e0e0e0, inset 0 1rem 0 #e0e0e0;
+  animation: animation-wave-ring-loader 4.5s ease-in-out infinite;
+}
+.ani-wave-ring-loader span:nth-child(1){
+  animation-delay: 0s;
+}
+.ani-wave-ring-loader span:nth-child(2){
+  animation-delay: 1.5s;
+}
+.ani-wave-ring-loader span:nth-child(3){
+  animation-delay: 3s;
+}
+@keyframes animation-wave-ring-loader {
+  0%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+  25%{
+    transform: translateZ(100px);
+    width: 100%;
+    height: 100%;
+  }
+  50%{
+    transform: translateZ(100px);
+    width: 35%;
+    height: 35%;
+  }
+  75%{
+    transform: translateZ(-100px);
+    width: 35%;
+    height: 35%;
+  }
+  100%{
+    transform: translateZ(-100px);
+    width: 100%;
+    height: 100%;
+  }
+}
+/* Wave Ring Loader */
   }

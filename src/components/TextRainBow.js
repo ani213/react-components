@@ -7,8 +7,10 @@ class TextRainBow extends Component {
             fontWeight:this.props.fontWeight
         }
         return ( 
-            <div>
-                {this.props.text && <div className="ani-text-rainBow" style={style}>{this.props.text}</div>}          
+            <div className="over-flow-hidden">
+                {this.props.text && <div className="ani-text-rainBow" 
+                // style={style}
+                >{this.props.text}</div>}          
             </div>
          );
     }
