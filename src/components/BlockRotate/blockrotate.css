@@ -1,0 +1,257 @@
+
+  @media screen and (min-width:851px) {
+  
+    html{
+        font-size: 62.5%;
+    }
+.ani-box-contatiner{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}    
+.ani-box{
+    position: absolute;
+    top: calc(50% - 10rem);
+    left: calc(50% - 13.5rem);
+    height: 20rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem) rotateY(45deg);
+}
+.ani-box div {
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    transform-style: preserve-3d;
+}
+.ani-box div span{
+    position: relative;
+    display: block;
+    width: 5rem;
+    height: 100%;
+    background: linear-gradient(#e8e8e8,#a7a7a7,#e8e8e8);
+    animation: block-animate 2.8s linear infinite;
+}
+.ani-box div span:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transform-style: preserve-3d;
+    transform: translateX(-2.5rem) scaleY(0.5);
+}
+.ani-box div span:nth-child(1){
+  animation-delay: 0s;
+}
+.ani-box div span:nth-child(2){
+    animation-delay: 0.2s;
+}
+.ani-box div span:nth-child(3){
+    animation-delay: 0.4s;
+}
+.ani-box div span:nth-child(4){
+    animation-delay: 0.6s;
+  }
+.ani-box div span:nth-child(5){
+    animation-delay: 0.8s;
+}
+.ani-box div span:nth-child(6){
+    animation-delay: 1s;
+} 
+.ani-box div span:nth-child(7){
+    animation-delay: 1.2s;
+}
+.ani-box div span:nth-child(8){
+    animation-delay: 1.4s;
+}
+.ani-box div span:nth-child(9){
+    animation-delay: 1.6s;
+} 
+@keyframes block-animate {
+    0%{
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(360deg)
+    }
+}
+  
+  }
+  
+  
+  /*********************************************** Tablet View***************************/
+  @media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+    .ani-box-contatiner{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .ani-box{
+        position: absolute;
+        top: calc(50% - 10rem);
+        left: calc(50% - 13.5rem);
+        height: 20rem;
+        transform-style: preserve-3d;
+        transform: perspective(100rem) rotateY(45deg);
+    }
+    .ani-box div {
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        transform-style: preserve-3d;
+    }
+    .ani-box div span{
+        position: relative;
+        display: block;
+        width: 5rem;
+        height: 100%;
+        background: linear-gradient(#e8e8e8,#a7a7a7,#e8e8e8);
+        animation: block-animate 2.8s linear infinite;
+    }
+    .ani-box div span:before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        transform-style: preserve-3d;
+        transform: translateX(-2.5rem) scaleY(0.5);
+    }
+    .ani-box div span:nth-child(1){
+      animation-delay: 0s;
+    }
+    .ani-box div span:nth-child(2){
+        animation-delay: 0.2s;
+    }
+    .ani-box div span:nth-child(3){
+        animation-delay: 0.4s;
+    }
+    .ani-box div span:nth-child(4){
+        animation-delay: 0.6s;
+      }
+    .ani-box div span:nth-child(5){
+        animation-delay: 0.8s;
+    }
+    .ani-box div span:nth-child(6){
+        animation-delay: 1s;
+    } 
+    .ani-box div span:nth-child(7){
+        animation-delay: 1.2s;
+    }
+    .ani-box div span:nth-child(8){
+        animation-delay: 1.4s;
+    }
+    .ani-box div span:nth-child(9){
+        animation-delay: 1.6s;
+    } 
+    @keyframes block-animate {
+        0%{
+            transform: rotateX(0deg);
+        }
+        100%{
+            transform: rotateX(360deg)
+        }
+    } 
+ }
+  
+  
+  
+  
+  
+  /* ****************************************************************** */
+  
+  @media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .ani-box-contatiner{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    .ani-box{
+        position: absolute;
+        top: calc(50% - 10rem);
+        left: calc(50% - 12rem);
+        height: 20rem;
+        transform-style: preserve-3d;
+        transform: perspective(100rem) rotateY(45deg);
+    }
+    .ani-box div {
+        position: absolute;
+        top:0;
+        left: 0;
+        height: 100%;
+        display: flex;
+        transform-style: preserve-3d;
+    }
+    .ani-box div span{
+        position: relative;
+        display: block;
+        width: 5rem;
+        height: 100%;
+        background: linear-gradient(#e8e8e8,#a7a7a7,#e8e8e8);
+        animation: block-animate 2.8s linear infinite;
+    }
+    .ani-box div span:before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        transform-style: preserve-3d;
+        transform: translateX(-2.5rem) scaleY(0.5);
+    }
+    .ani-box div span:nth-child(1){
+      animation-delay: 0s;
+    }
+    .ani-box div span:nth-child(2){
+        animation-delay: 0.2s;
+    }
+    .ani-box div span:nth-child(3){
+        animation-delay: 0.4s;
+    }
+    .ani-box div span:nth-child(4){
+        animation-delay: 0.6s;
+      }
+    .ani-box div span:nth-child(5){
+        animation-delay: 0.8s;
+    }
+    .ani-box div span:nth-child(6){
+        animation-delay: 1s;
+    } 
+    .ani-box div span:nth-child(7){
+        animation-delay: 1.2s;
+    }
+    .ani-box div span:nth-child(8){
+        animation-delay: 1.4s;
+    }
+    .ani-box div span:nth-child(9){
+        animation-delay: 1.6s;
+    } 
+    @keyframes block-animate {
+        0%{
+            transform: rotateX(0deg);
+        }
+        100%{
+            transform: rotateX(360deg)
+        }
+    }    
+  }

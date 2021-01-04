@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import RingLoader from './components/RingLoader';
 import TextRainBow from './components/TextRainBow';
 import PreWaveRingLoader from './components/WaveRingLoader/pre-loader-aniwavering';
+import PreLoaderwaveVertical from './components/WaveVerticalLoader/pre-loader-ani-wavering-vertical';
+import BlockRotate from './components/BlockRotate/pre-loader-ani-blockrotate';
 
 
 class App extends Component {
@@ -23,6 +25,12 @@ class App extends Component {
             </div>
             <div>
             <PreWaveRingLoader />
+          </div>
+          <div style={{borderTop:"1px solid gray"}}>
+            <PreLoaderwaveVertical />
+          </div>
+          <div>
+            <BlockRotate style={{background:"#311D3F"}}/>
           </div>
           </div>
           <div className="footer-container">
