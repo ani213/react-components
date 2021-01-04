@@ -1,0 +1,11 @@
+{
+  "name": "pre-loader-aniring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pre-loader-aniring.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniket Kumar Verma",
+  "license": "ISC"
+}

@@ -3,7 +3,7 @@ import './components/component.css'
 import React, { Component } from 'react';
 import RingLoader from './components/RingLoader';
 import TextRainBow from './components/TextRainBow';
-import WaveRingLoader from './components/WaveRingLoader';
+import PreWaveRingLoader from './components/WaveRingLoader/pre-loader-aniwavering';
 
 
 class App extends Component {
@@ -17,15 +17,13 @@ class App extends Component {
           <div className="loader-container">
            <h1 className="pre-loader">PRE-LOADERS</h1>
             <div className="ring-loader-container">
-            <div>
+            <div style={{height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}}>
                <RingLoader />
             </div>
             </div>
-            <div className="wave-ring-loader-container">
             <div>
-              <WaveRingLoader />
-            </div>
-            </div>
+            <PreWaveRingLoader />
+          </div>
           </div>
           <div className="footer-container">
              <TextRainBow text="Other components will be available very soon..." fontSize="3rem" fontWeight="900"/>

@@ -1,0 +1,255 @@
+
+  @media screen and (min-width:851px) {
+  
+    html{
+        font-size: 62.5%;
+    }
+
+  .ani-ring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    background:#E4EBF5;
+    border-radius: 50%;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5);
+  
+    color: #ac550e;
+    letter-spacing: 0.4rem;
+    /* text-transform: uppercase; */
+    text-shadow: 0 0 0.1rem #ac550e;
+    box-shadow: .3rem .3rem .6rem #BABECC, 
+               -.2rem -.2rem .5rem #FFF ;
+    position: relative;           
+  }
+  .ani-ring:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 96%;
+    height: 96%;
+    border: 0.3rem solid transparent;
+    border-top: 0.3rem solid #ffff1a;
+    border-right: 0.3rem solid #ffff1a;
+    border-radius: 50%;
+    animation: animateCircle 2s linear infinite;
+  }
+  .ani-ring>span{
+    display: block;
+    position: absolute;
+    right: 0;
+    background: #ffff1a;
+    background: transparent;
+    width: 50%;
+    height: 0.5rem;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+  }
+  .ani-ring>span:before{
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: #ffff1a;
+    right: -0.7rem;
+    top: -0.6rem;
+    box-shadow: 0 0 2rem #ffff1a;
+  }
+  
+  @keyframes animateCircle {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg)
+    }
+  }
+  @keyframes animate {
+    0%{
+      transform: rotate(50deg);
+    }
+    100%{
+      transform: rotate(405deg)
+    }
+  }
+
+/*   ring Loader End */
+
+/* Text RainBow  */
+
+
+  
+  }
+  
+  
+  /*********************************************** Tablet View***************************/
+  @media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+    .ani-ring{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+      background:#E4EBF5;
+      border-radius: 50%;
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5);
+    
+      color: #ac550e;
+      letter-spacing: 0.4rem;
+      /* text-transform: uppercase; */
+      text-shadow: 0 0 0.1rem #ac550e;
+      box-shadow: .3rem .3rem .6rem #BABECC, 
+                 -.2rem -.2rem .5rem #FFF ;
+      position: relative;           
+    }
+    .ani-ring:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 96%;
+      height: 96%;
+      border: 0.3rem solid transparent;
+      border-top: 0.3rem solid #ffff1a;
+      border-right: 0.3rem solid #ffff1a;
+      border-radius: 50%;
+      animation: animateCircle 2s linear infinite;
+    }
+    .ani-ring>span{
+      display: block;
+      position: absolute;
+      right: 0;
+      background: #ffff1a;
+      background: transparent;
+      width: 50%;
+      height: 0.5rem;
+      transform-origin: left;
+      animation: animate 2s linear infinite;
+    }
+    .ani-ring>span:before{
+      content: "";
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: #ffff1a;
+      right: -0.7rem;
+      top: -0.6rem;
+      box-shadow: 0 0 2rem #ffff1a;
+    }
+    
+    @keyframes animateCircle {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg)
+      }
+    }
+    @keyframes animate {
+      0%{
+        transform: rotate(50deg);
+      }
+      100%{
+        transform: rotate(405deg)
+      }
+    }
+  
+  }
+  
+  
+  
+  
+  
+  /* ****************************************************************** */
+  
+  @media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+    .ani-ring{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15rem;
+      height: 15rem;
+      background:#E4EBF5;
+      border-radius: 50%;
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      text-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5);
+    
+      color: #ac550e;
+      letter-spacing: 0.4rem;
+      /* text-transform: uppercase; */
+      text-shadow: 0 0 0.1rem #ac550e;
+      box-shadow: .3rem .3rem .6rem #BABECC, 
+                 -.2rem -.2rem .5rem #FFF ;
+      position: relative;           
+    }
+    .ani-ring:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 96%;
+      height: 96%;
+      border: 0.3rem solid transparent;
+      border-top: 0.3rem solid #ffff1a;
+      border-right: 0.3rem solid #ffff1a;
+      border-radius: 50%;
+      animation: animateCircle 2s linear infinite;
+    }
+    .ani-ring>span{
+      display: block;
+      position: absolute;
+      right: 0;
+      background: #ffff1a;
+      background: transparent;
+      width: 50%;
+      height: 0.5rem;
+      transform-origin: left;
+      animation: animate 2s linear infinite;
+    }
+    .ani-ring>span:before{
+      content: "";
+      position: absolute;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: #ffff1a;
+      right: -0.7rem;
+      top: -0.6rem;
+      box-shadow: 0 0 2rem #ffff1a;
+    }
+    
+    @keyframes animateCircle {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg)
+      }
+    }
+    @keyframes animate {
+      0%{
+        transform: rotate(50deg);
+      }
+      100%{
+        transform: rotate(405deg)
+      }
+    } 
+  }
