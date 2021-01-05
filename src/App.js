@@ -6,6 +6,8 @@ import TextRainBow from './components/TextRainBow';
 import PreWaveRingLoader from './components/WaveRingLoader/pre-loader-aniwavering';
 import PreLoaderwaveVertical from './components/WaveVerticalLoader/pre-loader-ani-wavering-vertical';
 import BlockRotate from './components/BlockRotate/pre-loader-ani-blockrotate';
+import TextWave from './components/TextWave/pre-loader-ani-textwave';
+// import PreLoaderAniTextRotate from './components/TextRotateLoader/pre-loader-anitextrotate';
 
 
 class App extends Component {
@@ -32,12 +34,18 @@ class App extends Component {
           <div>
             <BlockRotate style={{background:"#311D3F"}}/>
           </div>
+          {/* <div>
+            <PreLoaderAniTextRotate />
+          </div> */}
+          <div>
+            <TextWave  text="React Component" style={{bubbleColor:"yellow"}}/>
+          </div>
           </div>
           <div className="footer-container">
              <TextRainBow text="Other components will be available very soon..." fontSize="3rem" fontWeight="900"/>
           </div>
           <div className="coded">
-            <h1 >Coded with love by Aniket Kumar Verma.</h1>
+            <h1>Coded with love by Aniket Kumar Verma.</h1>
           </div>
       </div>
      );

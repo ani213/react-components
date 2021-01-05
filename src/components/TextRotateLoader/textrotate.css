@@ -1,0 +1,65 @@
+
+  @media screen and (min-width:851px) {
+  
+    html{
+        font-size: 62.5%;
+    }
+.circle-container{
+    background: #673ab7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}  
+.circle{
+    transform-style: preserve-3d;
+    transform: perspective(100px) rotateY(360deg)
+    rotateX(15deg);
+    animation: text-animate 8s linear infinite;
+}
+.circle {
+    position: absolute;
+    color: #35146f;
+    padding: 5px 12px;
+    font-size: 4rem;
+    transform-origin: center;
+    background: #fff;
+    border-top:  4px solid #35146f;
+    border-bottom:  4px solid #35146f;
+    transform: rotateY(calc(var(20) * 12deg)) translateZ(250px);
+}
+@keyframes text-animate {
+     0%{
+         transform: perspective(100px) rotateY(360deg)
+         rotateX(15deg);
+     }
+     100%{
+         transform: perspective(1000px) rotateY(0deg)
+         rotateX(15deg);
+     }
+}
+
+  }
+  
+  
+  /*********************************************** Tablet View***************************/
+  @media screen and (min-width:451px) and (max-width:850px) {
+    html{
+        font-size: 55%;
+    }
+
+ }
+  
+  
+  
+  
+  
+  /* ****************************************************************** */
+  
+  @media screen and (max-width:450px) {
+    html{
+        font-size: 45%;
+    }
+ 
+  }
