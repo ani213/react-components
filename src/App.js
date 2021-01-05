@@ -38,7 +38,7 @@ class App extends Component {
             <PreLoaderAniTextRotate />
           </div> */}
           <div>
-            <TextWave  text="React Component" style={{bubbleColor:"yellow"}}/>
+            <TextWave  text="" style={{bubbleColor:"yellow"}}/>
           </div>
           </div>
           <div className="footer-container">
