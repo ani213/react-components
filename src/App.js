@@ -1,14 +1,14 @@
 import './App.css';
 import './components/component.css'
 import React, { Component } from 'react';
-import RingLoader from './components/RingLoader';
+import RingLoader from './components/RingLoader/pre-loader-aniring';
 import TextRainBow from './components/TextRainBow';
 import PreWaveRingLoader from './components/WaveRingLoader/pre-loader-aniwavering';
 import PreLoaderwaveVertical from './components/WaveVerticalLoader/pre-loader-ani-wavering-vertical';
 import BlockRotate from './components/BlockRotate/pre-loader-ani-blockrotate';
 import TextWave from './components/TextWave/pre-loader-ani-textwave';
+import RotateGalary from './components/Rotate_Galary/rotate-galary';
 // import PreLoaderAniTextRotate from './components/TextRotateLoader/pre-loader-anitextrotate';
-
 
 class App extends Component {
   state = {  }
@@ -31,6 +31,9 @@ class App extends Component {
           <div style={{borderTop:"1px solid gray"}}>
             <PreLoaderwaveVertical />
           </div>
+           <div>
+            <RotateGalary />
+          </div>
           <div>
             <BlockRotate style={{background:"#311D3F"}}/>
           </div>
@@ -46,6 +49,8 @@ class App extends Component {
           </div>
           <div className="coded">
             <h1>Coded with love by Aniket Kumar Verma.</h1>
+          </div>
+          <div>
           </div>
       </div>
      );
